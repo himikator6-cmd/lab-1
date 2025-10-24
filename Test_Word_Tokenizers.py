@@ -3,10 +3,10 @@ from L1_Modules import text_cleaner as tc
 from L1_Modules import word_tokenizers as wt
 
 
-FTR1 = 'ftr1.jsonl'
-FTR2 = 'ftr2.jsonl'
-FTR3 = 'ftr3.jsonl'
-FTR4 = 'ftr4.jsonl'
+FTR1 = 'train1.jsonl'
+FTR2 = 'train2.jsonl'
+FTR3 = 'train3.jsonl'
+FTR4 = 'train4.jsonl'
 
 FTR = [FTR1, FTR2, FTR3, FTR4]
 
@@ -153,6 +153,7 @@ print()
 print()
 print()
 print()
+
 
 
 
