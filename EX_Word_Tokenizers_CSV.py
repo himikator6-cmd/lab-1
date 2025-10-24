@@ -3,15 +3,16 @@ from L1_Modules import text_cleaner as tc
 from L1_Modules import word_tokenizers as wt
 
 
-FTR1 = 'ftr1.jsonl'
-FTR2 = 'ftr2.jsonl'
-FTR3 = 'ftr3.jsonl'
-FTR4 = 'ftr4.jsonl'
-FTS1 = 'fts1.jsonl'
-FTS2 = 'fts2.jsonl'
+FTR1 = 'train1.jsonl'
+FTR2 = 'train2.jsonl'
+FTR3 = 'train3.jsonl'
+FTR4 = 'train4.jsonl'
+FTS1 = 'test1.jsonl'
+FTS2 = 'test2.jsonl'
+FTS3 = 'test3.jsonl'
 
 FTR = [FTR1, FTR2, FTR3, FTR4]
-FTS = [FTS1, FTS2]
+FTS = [FTS1, FTS2, FTS3]
 
 
 TrainText = tc.text_extractor(FTR[0])
@@ -159,3 +160,4 @@ i = i + 1
 with open("tokenization_metrics.csv", "w", newline = '', encoding = "utf-8") as csvfile:
     writer = csv.writer(csvfile, delimiter = ',')
     writer.writerows(data)
+
